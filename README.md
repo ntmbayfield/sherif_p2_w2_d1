@@ -2,14 +2,16 @@ This repo has a bunch of folders, one for each of the solo day challenges.
 
 # c395
 
+these routes are from the ActiveRecord docs and are a good overview of how to remember
+
 ```text
 HTTP Verb  Path               Used for
 ---------  ----               --------
-GET        /photos            return a list of all photos
-GET        /photos/new        return an HTML form for creating a new photo
-POST       /photos            create a new photo
-GET        /photos/:id        return a specific photo
-GET        /photos/:id/edit   return an HTML form for editing a photo
-PATCH/PUT  /photos/:id        update a specific photo
-DELETE     /photos/:id        delete a specific photo
+GET        /notes            return a list of all notes
+GET        /notes/new        return an HTML form for creating a new note
+POST       /notes            create a new note
+GET        /notes/:id        return a specific note
+GET        /notes/:id/edit   return an HTML form for editing a note
+PATCH/PUT  /notes/:id        update a specific note
+DELETE     /notes/:id        delete a specific note
 ```
