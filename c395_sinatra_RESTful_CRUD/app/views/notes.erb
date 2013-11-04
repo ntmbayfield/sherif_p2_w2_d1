@@ -1,0 +1,14 @@
+<% if @notes.empty? %>
+  there are no notes in the system.
+  <a href="/notes/new">create one!</a>
+<% else %>
+  <h1>All the Notes!</h1>
+  <ul>
+  <% @notes.each do |note| %>
+    <li>[<%= note.name %>]<br><%= note.content %></li>
+    <br>
+  <% end %>
+  </ul>
+
+  <a href="/notes/new">create note</a>
+<% end %>
