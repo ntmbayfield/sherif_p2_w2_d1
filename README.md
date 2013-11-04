@@ -1,4 +1,1 @@
-sherif_p2_w2_d1
-===============
-
-solo day challenges for phase 2, week 2, day 1
+This repo has a bunch of folders, one for each of the solo day challenges.
