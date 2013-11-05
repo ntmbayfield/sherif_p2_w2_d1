@@ -1,6 +1,6 @@
 get '/' do
   # Look in app/views/index.erb
-  erb :index
+  redirect '/notes'
 end
 
 # ######################################################
@@ -30,7 +30,6 @@ end
 ######################################################
 
 get '/notes/:id/edit' do
-  p params
   @note = Note.find(params[:id])
   erb :edit_note
 end
@@ -38,8 +37,16 @@ end
 put '/notes/:id' do
   @note = Note.find(params[:id])
   @note.update_attributes(params[:note])
-  p @note
   erb :confirm_update_note
+end
+
+######################################################
+# DELETE NOTE
+######################################################
+
+delete '/notes/:id' do
+  Note.find(params[:id]).destroy
+  redirect '/'
 end
 
 ######################################################
