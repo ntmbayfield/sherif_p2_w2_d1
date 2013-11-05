@@ -6,7 +6,7 @@
   <ul>
   <% @notes.each do |note| %>
     <li><%= erb :'_delete_note', locals: {note_id: note.id} %>
-      [<%= note.name %>]<br><%= note.content %></li>
+      [<%= note.title %>]<br><%= note.content %></li>
     <br>
   <% end %>
   </ul>
