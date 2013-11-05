@@ -33,3 +33,12 @@
   height: 200px;
   background: #ebde52;
 }
+
+#box_5 {
+  position: absolute;
+  top: 75;
+  left: 75;
+  width: 50px;
+  height: 50px;
+  background: orange;
+}
