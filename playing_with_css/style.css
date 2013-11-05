@@ -1,44 +1,18 @@
-#box_1 {
+#box_a {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 200px;
-  height: 200px;
-  background: #ee3e64;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  background: red;
 }
 
-#box_2 {
+#box_b {
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 200px;
-  height: 200px;
-  background: #44accf;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  background: white;
 }
 
-#box_3 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 200px;
-  height: 200px;
-  background: #b7d84b;
-}
-
-#box_4 {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 200px;
-  height: 200px;
-  background: #ebde52;
-}
-
-#box_5 {
-  position: absolute;
-  top: 75;
-  left: 75;
-  width: 50px;
-  height: 50px;
-  background: orange;
-}
