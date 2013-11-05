@@ -23,3 +23,7 @@ DELETE     /notes/:id        delete a specific note
 - the `trim_to` helper function uses [this regex](http://www.velvetcache.org/2011/06/07/regex-fun-get-a-substring-by-length-breaking-on-word-boundary) but injects the max length dynamically using % notation in ruby
 - finding [colors](http://www.colorhunter.com/color/8B0000) was fun although i don't think i ended up using any.  oh yeah, i almost [styled my buttons](http://www.usabilitypost.com/2012/01/10/pressed-button-state-with-css3/) with some fancy stuff but decided against shooting the moon with my janky css.
 - someone called me a hipster the other day so i've been using this: http://hipsteripsum.me/
+- flash message support
+  - in sinatra using rack-flash: http://www.justhacking.com/flash-messages-in-a-sinatra-app
+  - this might be interesting to support different message types: http://www.jankoatwarpspeed.com/css-message-boxes-for-different-message-types/
+
