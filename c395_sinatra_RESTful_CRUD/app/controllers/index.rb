@@ -24,3 +24,21 @@ post '/notes' do
   @note = Note.create!(params[:note])
   erb :confirm_new_note
 end
+
+######################################################
+# EDIT NOTE
+######################################################
+
+get '/notes/:id/edit' do
+  p params
+  @note = Note.find(params[:id])
+  erb :edit_note
+end
+
+put '/notes/:id' do
+  @note = Note.find(params[:id])
+  @note.update_attributes(params[:note])
+  p @note
+  erb :confirm_update_note
+end
+
