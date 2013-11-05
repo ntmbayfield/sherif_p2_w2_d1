@@ -1,0 +1,1 @@
+the readme at the top level should have summaries of all the project details.
