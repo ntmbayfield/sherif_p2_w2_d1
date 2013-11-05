@@ -3,7 +3,13 @@
 # ######################################################
 
 get '/notes' do
-  @notes = Note.all
+  @notes = Note.limit_recent_to(5)
+
+  # the following will list all the recent notes
+  # @notes = Note.recent
+
+  # this is here as a reminder of the unscoped thing from the model (note.rb)
+  # @notes = Note.unscoped.earlybirds
   erb :notes
 end
 
