@@ -11,7 +11,6 @@ th {
 
 #page-title {
   padding: 20px;
-
 }
 
 .action-button{
@@ -19,27 +18,20 @@ th {
   padding: 5px;
   float: right;
   top: -70px;
-}
-
-.button-small {
-  position: relative;
-  padding: 5px;
-  float: right;
-  top: -60px;
-  right: -15px;
-  font-size: 0.5em;
+  left: -10px;
 }
 
 .note {
+  position: relative;
   border: solid 1px gray;
   margin: 20px;
   padding: 10px;
 }
 
 .note .title {
+  position: relative;
   display:inline-block;
   background-color: white;
-  position: relative;
   top: -25px;
   left: -5px;
   padding: 5px;
@@ -51,8 +43,30 @@ th {
   position: relative;
   top: -20px;
   font-size: 0.75em;
+  overflow: auto;
 }
 
+.delete {
+  position: absolute;
+  padding: 5px;
+  font-size: 0.5em;
+  top: -10px;
+  right: -10px;
+}
+
+#create-note input[type=text] {
+  position: relative;
+  margin-left: 20px;
+}
+
+#create-note textarea {
+  position: relative;
+  display: block;
+}
+
+.delete .button-small{
+  position: relative;
+}
 
 /***********************************************
     == animation for flash notice ==

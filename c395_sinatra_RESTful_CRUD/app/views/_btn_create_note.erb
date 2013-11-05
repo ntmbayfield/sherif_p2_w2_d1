@@ -1,4 +1,15 @@
-<form action="/notes" method="post">
-  <input >
-  <input class="action-button" type="submit" value="Create Note">
+<form id="create-note" action="/notes" method="post">
+  <div id="name">
+    <label for="note-title">name:</label>
+    <input type="text" id="note-title" name="note[title]">
+  </div>
+
+  <div id="content">
+    <label for="note-content">content:</label>
+    <textarea id="note-content" name="note[content]"></textarea>
+  </div>
+
+  <div class="action-button">
+    <input type="submit" value="Create Note">
+  </div>
 </form>

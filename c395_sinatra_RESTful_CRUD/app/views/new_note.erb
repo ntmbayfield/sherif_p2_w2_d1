@@ -4,31 +4,3 @@
   </div>
   <%= erb :_btn_create_note %>
 </header>
-
-<h1>Create a Note</h1>
-<table border=1>
-<form action="/notes" method="post">
-  <tr>
-    <td>
-      <label for="note[title]">name:</label>
-    </td>
-    <td>
-      <input type="text" name="note[title]" size="28" maxlength="100">
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <label for="note[content]">content:</label>
-    </td>
-    <td>
-      <textarea type="text" name="note[content]" cols="30"></textarea>
-    </td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>
-      <input type="submit">
-    </td>
-  </tr>
-</form>
-</table>

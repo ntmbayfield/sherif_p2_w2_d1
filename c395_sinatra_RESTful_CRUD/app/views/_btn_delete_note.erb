@@ -7,5 +7,5 @@ function confirmDelete(){
 
 <form action="/notes/<%= note_id %>" method="post" onsubmit="return confirmDelete();">
   <input type="hidden" name="_method" value="delete">
-  <input class="action-button button-small" type="submit" value="x">
+  <input type="submit" value="x">
 </form>
