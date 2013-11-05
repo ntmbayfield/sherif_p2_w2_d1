@@ -1,7 +1,7 @@
 .container {
-  margin: 20px auto;
+  margin: 10px auto;
   width: 600px;
-  padding: 0px 20px 20px 20px;
+  padding: 10px;
   border: 1px dotted black;
 }
 
@@ -52,3 +52,58 @@ th {
   top: -20px;
   font-size: 0.75em;
 }
+
+
+/***********************************************
+    == animation for flash notice ==
+
+this animation stuff is a total pile of shit.
+
+seriously, who are these people and what are
+they smoking?
+
+here's the link that i copy-pasted this from
+http://stackoverflow.com/questions/11679567/using-css-for-fade-in-effect-on-page-load
+
+and the one i skimmed before that
+http://davidwalsh.name/vendor-prefixes
+(david walsh has some great stuff, btw)
+************************************************/
+
+.alert {
+  padding: 20px;
+
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+     -moz-animation: fadein 1s; /* Firefox */
+      -ms-animation: fadein 1s; /* Internet Explorer */
+       -o-animation: fadein 1s; /* Opera */
+          animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from { background-color: #FF721C; }
+    to   { background-color: white; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { background-color: #FF721C; }
+    to   { background-color: white; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { background-color: #FF721C; }
+    to   { background-color: white; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { background-color: #FF721C; }
+    to   { background-color: white; }
+}​
+
+/***********************************************
+END: animation shit
+***********************************************/
+

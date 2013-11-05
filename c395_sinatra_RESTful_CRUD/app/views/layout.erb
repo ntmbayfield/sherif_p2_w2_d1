@@ -19,7 +19,15 @@
 </head>
 <body>
   <div class="container">
+    <% if flash_message? %>
+    <div class="notice <%= flash_message_class %>">
+      <%= flash_message_content %>
+    </div>
+    <% end %>
+
     <%= yield %>
+
   </div>
+  <% flash_message_clear! %>
 </body>
 </html>

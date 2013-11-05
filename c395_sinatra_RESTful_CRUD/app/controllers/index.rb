@@ -40,7 +40,12 @@ end
 ######################################################
 
 delete '/notes/:id' do
-  Note.find(params[:id]).destroy
+  begin
+    Note.find(params[:id]).destroy
+    flash_message(:alert, "deleted note #{params[:id]}. buh-bye.")
+  rescue ActiveRecord::RecordNotFound => e
+    flash_message(:warning, "record not found for #{params[:id]}!")
+  end
   redirect '/'
 end
 
