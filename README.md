@@ -19,7 +19,7 @@ DELETE     /notes/:id        delete a specific note
 ### some useful links
 
 - [git stashing](http://git-scm.com/book/en/Git-Tools-Stashing) -- things would've been a lot messier with out this nugget
-- [CSS overflow](http://www.w3schools.com/cssref/pr_pos_overflow.asp)
+- [CSS overflow](http://www.w3schools.com/cssref/pr_pos_overflow.asp) is what made the note titles look so nice and tight with the box lines and stuff
 - the `trim_to` helper function uses [this regex](http://www.velvetcache.org/2011/06/07/regex-fun-get-a-substring-by-length-breaking-on-word-boundary) but injects the max length dynamically using % notation in ruby
 - finding [colors](http://www.colorhunter.com/color/8B0000) was fun although i don't think i ended up using any.  oh yeah, i almost [styled my buttons](http://www.usabilitypost.com/2012/01/10/pressed-button-state-with-css3/) with some fancy stuff but decided against shooting the moon with my janky css.
 - someone called me a hipster the other day so i've been using this: http://hipsteripsum.me/
