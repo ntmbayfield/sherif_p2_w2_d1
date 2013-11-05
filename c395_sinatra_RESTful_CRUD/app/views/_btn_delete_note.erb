@@ -1,4 +1,11 @@
-<form action="/notes/<%= note_id %>" method="post">
+<script type="text/javascript">
+function confirmDelete(){
+  if (confirm('are you sure?')) { return true; }
+  return false;
+}
+</script>
+
+<form action="/notes/<%= note_id %>" method="post" onsubmit="return confirmDelete();">
   <input type="hidden" name="_method" value="delete">
   <input class="action-button button-small" type="submit" value="x">
 </form>
