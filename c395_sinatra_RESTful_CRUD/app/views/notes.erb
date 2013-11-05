@@ -1,15 +1,25 @@
-<% if @notes.empty? %>
-  there are no notes in the system.
-  <a href="/notes/new">create one!</a>
-<% else %>
-  <h1>All the Notes!</h1>
-  <ul>
-  <% @notes.each do |note| %>
-    <li><%= erb :'_delete_note', locals: {note_id: note.id} %>
-      [<%= note.title %>]<br><%= note.content %></li>
-    <br>
+<header>
+  <div id="page-title">
+    <h1>Notes App</h1>
+  </div>
+  <%= erb :_btn_create_note %>
+</header>
+<div id="notes-list">
+  <% if @notes.empty? %>
+    no notes
+  <% else %>
+    <% @notes.each do |note| %>
+    <div class="note" id="note-<%= note.id %>">
+      <div class="title">
+        <%= trim_to(note.title) %>
+      </div>
+      <div class="content">
+        <%= note.content %>
+      </div>
+      <div class="delete">
+        <%= erb :_btn_delete_note, locals: {note_id: note.id} %>
+      </div>
+    </div>
+    <% end %>
   <% end %>
-  </ul>
-
-  <a href="/notes/new">create note</a>
-<% end %>
+</div>
