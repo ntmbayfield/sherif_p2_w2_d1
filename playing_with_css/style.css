@@ -6,9 +6,11 @@
 }
 
 #box_2 {
-  position: absolute;
-  left: 100px;
-  width: 200px;
-  height: 200px;
-  background: #44accf;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: green;
 }
+
