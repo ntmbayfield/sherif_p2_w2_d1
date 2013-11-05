@@ -1,17 +1,14 @@
 #box_1 {
-  position: absolute;
-  top: 0;
-  right: 20%;
-  bottom: 0;
-  left: 0;
+  /*position: absolute;*/
+  width: 200px;
+  height: 200px;
   background: #ee3e64;
 }
 
 #box_2 {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 80%;
-  background: #b7d84b;
+  left: 100px;
+  width: 200px;
+  height: 200px;
+  background: #44accf;
 }
