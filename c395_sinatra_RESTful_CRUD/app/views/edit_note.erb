@@ -1,0 +1,29 @@
+<h1>Edit the note!</h1>
+<table border=1>
+<form action="/notes/<%= @note.id %>" method="post">
+<input type="hidden" name="_method" value="put">
+
+  <tr>
+    <td>
+      <label for="note[name]">name:</label>
+    </td>
+    <td>
+      <input type="text" name="note[name]" size="28" value="<%= @note.name %>">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label for="note[content]">content:</label>
+    </td>
+    <td>
+      <textarea type="text" name="note[content]" cols="30"><%= @note.content %></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>
+      <input type="submit">
+    </td>
+  </tr>
+</form>
+</table>
